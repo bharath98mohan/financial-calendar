@@ -30,9 +30,9 @@ export default function AppRoutes({
             path="/"
             element={
               <DashboardPage
+                salary={salary}
                 sips={sips}
                 emis={emis}
-                salary={salary}
                 bankFDs={bankFDs}
                 bonds={bonds}
               />
@@ -46,6 +46,15 @@ export default function AppRoutes({
                 emis={emis}
                 salary={salary}
                 bonds={bonds}
+              />
+            }
+          />
+          <Route
+            path="/salary"
+            element={
+              <SalaryPage
+                salary={salary}
+                onEdit={() => setModal({ type: "salary", data: salary })}
               />
             }
           />
@@ -68,15 +77,6 @@ export default function AppRoutes({
                 onEdit={(e) => setModal({ type: "emi", data: e })}
                 onToggle={toggleEMI}
                 onDelete={deleteEMI}
-              />
-            }
-          />
-          <Route
-            path="/salary"
-            element={
-              <SalaryPage
-                salary={salary}
-                onEdit={() => setModal({ type: "salary", data: salary })}
               />
             }
           />

@@ -14,9 +14,9 @@ import {
 const TABS = [
   { id: "dashboard", label: "Dashboard", icon: LayoutDashboard, path: "/" },
   { id: "calendar", label: "Calendar", icon: CalendarDays, path: "/calendar" },
+  { id: "salary", label: "Salary", icon: Briefcase, path: "/salary" },
   { id: "sips", label: "SIPs", icon: TrendingUp, path: "/sips" },
   { id: "emis", label: "EMIs", icon: CreditCard, path: "/emis" },
-  { id: "salary", label: "Salary", icon: Briefcase, path: "/salary" },
   { id: "bank", label: "Bank Interest", icon: Landmark, path: "/bank" },
   { id: "bonds", label: "Bonds", icon: BarChart3, path: "/bonds" },
 ];
